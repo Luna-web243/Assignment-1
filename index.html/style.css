@@ -1,0 +1,165 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* ===== CARD BASE ===== */
+.card,
+.modern-card {
+    background: white;
+    border-radius: 18px;
+    padding: 35px;
+    margin: 25px auto 30px auto;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== PROFILE CARD (Maklumat Staf) ===== */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    text-align: left;
+}
+
+.profile-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #333;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #111;
+}
+
+.profile-info p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 8px 0;
+}
+
+.label {
+    font-weight: bold;
+    color: #000;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+    border-left: 6px solid black;
+    padding-left: 12px;
+    text-align: left;
+}
+
+/* ===== CONTENT TEXT ===== */
+.content p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #444;
+}
+
+/* ===== INFO BOX (Role pages) ===== */
+.info-box {
+    background-color: #f8f8f8;
+    padding: 22px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.info-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.15);
+}
+
+.info-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #111;
+    font-size: 21px;
+}
+
+.info-box p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+/* ===== BUTTONS ===== */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 14px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .modern-card,
+    .card {
+        width: 95%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
